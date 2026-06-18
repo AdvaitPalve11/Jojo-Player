@@ -42,6 +42,8 @@ tasks.test {
 }
 
 jlink {
+    imageZip.set(file("$buildDir/distributions/app.zip"))
+
     launcher {
         name = "JojoPlayer"
     }
